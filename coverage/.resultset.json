@@ -1,0 +1,55 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/student/Dropbox/Projects/tech_test_SP/spec/webserver_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        4,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/student/Dropbox/Projects/tech_test_SP/lib/webserver.rb": [
+        1,
+        1,
+        null,
+        1,
+        3,
+        null,
+        null,
+        1,
+        16,
+        null,
+        null,
+        1,
+        1,
+        15,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Dropbox/Projects/tech_test_SP/spec/page_visit_helper.rb": [
+        1,
+        6,
+        4,
+        8,
+        null
+      ]
+    },
+    "timestamp": 1559332691
+  }
+}

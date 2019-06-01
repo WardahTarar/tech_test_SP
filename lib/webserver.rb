@@ -19,10 +19,10 @@ class WebServer
 
   def display_unique_views
     counter = 1
-      @logs.each do |log|
-          log << " #{counter} unique views"
-      end
-    @logs.uniq
+    unique_views = @logs.map do |log|
+      log + " #{counter} unique views"
+    end
+    unique_views.uniq
   end
 
 end

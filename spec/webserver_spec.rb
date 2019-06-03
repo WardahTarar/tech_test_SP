@@ -22,4 +22,11 @@ describe WebServer do
     expect(webserver.display_unique_views()).to eq ["/home 1 unique views", "/index 1 unique views", "/about 1 unique views"]
   end
 
+  it 'displays unique page views after multiple sessions' do
+    pages_visited
+    expect(webserver.display_unique_views()).to eq ["/home 1 unique views", "/index 1 unique views", "/about 1 unique views"]
+    pages_visited
+    expect(webserver.display_unique_views()).to eq ["/home 2 unique views", "/index 2 unique views", "/about 2 unique views"]
+  end
+
 end

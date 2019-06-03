@@ -4,6 +4,7 @@ class WebServer
   def initialize
     @logs = []
     @session = false
+    @counter = 0
   end
 
   def receive_log(log)
@@ -18,10 +19,11 @@ class WebServer
   end
 
   def display_unique_views
-    counter = 1
+    @counter += 1
     unique_views = @logs.map do |log|
-      log + " #{counter} unique views"
+      log + " #{@counter} unique views"
     end
+    @session = false
     unique_views.uniq
   end
 

@@ -8,7 +8,7 @@ class WebServer
   end
 
   def receive_log(log)
-    @session = true
+    turn_on_session
     @logs.push(log)
   end
 
@@ -23,8 +23,18 @@ class WebServer
     unique_views = @logs.map do |log|
       log + " #{@counter} unique views"
     end
-    @session = false
+    turn_off_session
     unique_views.uniq
+  end
+
+  private
+
+  def turn_on_session
+    @session = true
+  end
+
+  def turn_off_session
+    @session = false
   end
 
 end
